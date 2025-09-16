@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eléctricos Ruitoca - Líderes en Materiales Eléctricos | Barquisimeto</title>
+    <meta name="description" content="✨ Más de 25 años siendo líderes en materiales eléctricos en Barquisimeto. Cables, tubería, iluminación, breakers y control. ¡Calidad garantizada!">
+    <meta name="keywords" content="materiales eléctricos Barquisimeto, cables eléctricos, tubería PVC, iluminación LED, breakers, control eléctrico, Lara Venezuela">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Eléctricos Ruitoca - Líderes en Materiales Eléctricos">
+    <meta property="og:description" content="La tienda de confianza para profesionales y particulares en Barquisimeto">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://electricosruitoca.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#1e40af',
+                            600: '#1e3a8a',
+                            700: '#1d3557',
+                            800: '#0f172a',
+                            900: '#0a0e1a'
+                        },
+                        'golden': {
+                            50: '#fefce8',
+                            100: '#fef3c7',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#eab308',
+                            700: '#ca8a04'
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                        'poppins': ['Poppins', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'spin-slow': 'spin 3s linear infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        .bg-gradient-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
+        }
+        
+        .bg-gradient-section {
+            background: linear-gradient(135deg, #fefce8 0%, #ffffff 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #1e3a8a, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .shadow-glow {
+            box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .logo-container {
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-placeholder {
+            width: 120px;
+            height: 80px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-placeholder:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.4);
+        }
+        
+        .product-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-12px) rotate(1deg);
+            box-shadow: 0 25px 50px rgba(30, 58, 138, 0.15);
+        }
+    </style>
+</head>
+<body class="font-inter overflow-x-hidden">
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-gradient-hero flex items-center justify-center z-50 transition-all duration-1000">
+        <div class="text-center text-white">
+            <div class="text-6xl mb-4 animate-pulse">
+                <i class="fas fa-bolt text-golden-400"></i>
+            </div>
+            <h2 class="text-2xl font-bold font-poppins">Eléctricos Ruitoca</h2>
+            <div class="mt-4">
+                <div class="w-16 h-1 bg-golden-400 mx-auto animate-pulse"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo Area -->
+                <div class="flex items-center space-x-4">
+                    <div class="logo-container">
+                        <img src="C:\Users\User\OneDrive\Escritorio\Tecnología\LOGO ELECTRICOS1.25.19_f75ad3fe.jpg" 
+                             alt="Eléctricos Ruitoca - Materiales Eléctricos de Calidad" 
+                             class="h-16 w-auto max-w-[120px] object-contain hover:scale-105 transition-transform duration-300 cursor-pointer filter drop-shadow-md"
+                             onclick="window.location.href='#inicio'"
+                             loading="eager">
+                    </div>
+                    <div class="hidden md:block">
+                        <h1 class="text-2xl font-bold text-gradient">Eléctricos Ruitoca</h1>
+                        <p class="text-sm text-gray-600">Materiales Eléctricos de Calidad</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="nav-link text-navy-600 hover:text-golden-500 font-medium transition-colors">Inicio</a>
+                    <a href="#productos" class="nav-link text-navy-600 hover:text-golden-500 font-medium transition-colors">Productos</a>
+                    <a href="#servicios" class="nav-link text-navy-600 hover:text-golden-500 font-medium transition-colors">Servicios</a>
+                    <a href="#nosotros" class="nav-link text-navy-600 hover:text-golden-500 font-medium transition-colors">Nosotros</a>
+                    <a href="#contacto" class="nav-link text-navy-600 hover:text-golden-500 font-medium transition-colors">Contacto</a>
+                    <a href="C:\Users\User\OneDrive\Escritorio\Pedidos proyecto\index.html" class="bg-gradient-to-r from-golden-400 to-golden-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-shopping-cart mr-2"></i>Hacer Pedido
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-navy-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg hidden">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#inicio" class="block text-navy-600 font-medium">Inicio</a>
+                <a href="#productos" class="block text-navy-600 font-medium">Productos</a>
+                <a href="#servicios" class="block text-navy-600 font-medium">Servicios</a>
+                <a href="#nosotros" class="block text-navy-600 font-medium">Nosotros</a>
+                <a href="#contacto" class="block text-navy-600 font-medium">Contacto</a>
+                <a href="C:\Users\User\OneDrive\Escritorio\Pedidos proyecto\index.html" class="block bg-golden-400 text-white px-4 py-2 rounded-lg font-semibold text-center">Hacer Pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="py-16 bg-gradient-hero relative overflow-hidden flex items-center">
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-golden-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-golden-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-golden-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="text-white animate-fade-in">
+                    
+                    <!-- Badge -->
+                    <div class="inline-flex items-center px-4 py-2 rounded-full glass-effect text-sm font-semibold mb-6">
+                        <i class="fas fa-award text-golden-400 mr-2"></i>
+                        +25 años de experiencia en Barquisimeto
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="text-4xl md:text-6xl font-bold font-poppins leading-tight mb-6">
+                        Tu Tienda de
+                        <span class="text-golden-400 block">Materiales Eléctricos</span>
+                        de Confianza
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
+                        En <strong>Eléctricos Ruitoca</strong> encontrarás todo lo que necesitas: 
+                        <span class="text-golden-400">cables, tubería, iluminación, breakers y sistemas de control</span> 
+                        con la calidad y garantía que tu proyecto merece.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-golden-400" data-count="2500">0</div>
+                            <div class="text-sm text-gray-300">Productos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-golden-400" data-count="15000">0</div>
+                            <div class="text-sm text-gray-300">Clientes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-golden-400" data-count="25">0</div>
+                            <div class="text-sm text-gray-300">Años</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#productos" class="bg-gradient-to-r from-golden-400 to-golden-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-glow transform hover:scale-105 transition-all duration-300 text-center">
+                            <i class="fas fa-bolt mr-2"></i>Ver Productos
+                        </a>
+                        <a href="C:\Users\User\OneDrive\Escritorio\Pedidos proyecto\index.html" class="bg-transparent border-2 border-golden-400 text-golden-400 px-8 py-4 rounded-full font-bold text-lg hover:bg-golden-400 hover:text-navy-800 transition-all duration-300 text-center">
+                            <i class="fas fa-shopping-cart mr-2"></i>Hacer Pedido
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="relative animate-slide-in-right">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <img src="C:\Users\User\Downloads\Orange And Blue Plumbing Services Instagram Post.png" alt="Eléctricos Ruitoca">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce-slow">
+            <div class="text-center">
+                <i class="fas fa-chevron-down text-xl"></i>
+                <p class="text-sm mt-2">Descubre más</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-12 bg-gradient-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <div class="inline-block bg-golden-100 text-golden-700 px-6 py-2 rounded-full text-sm font-semibold mb-4">
+                    Nuestros Productos
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+                    Todo lo que necesitas para tu
+                    <span class="text-gradient">proyecto eléctrico</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Desde cables básicos hasta sistemas de automatización avanzada, 
+                    tenemos el inventario más completo de Barquisimeto
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Cables -->
+                <div class="product-card rounded-3xl p-8 shadow-xl hover-lift group cursor-pointer" onclick="showProductDetails('cables')">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-plug text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy-800 mb-4">Cables y Conductores</h3>
+                        <p class="text-gray-600 mb-6">THW, THHN, NYA, coaxial, red. Todos los calibres disponibles.</p>
+                        
+                        <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cable THW 12, 14, 10 AWG</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cable de red Cat5e, Cat6</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cable coaxial RG6, RG59</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cables de baja tensión</li>
+                        </ul>
+                        
+                        <div class="bg-gradient-to-r from-red-400 to-red-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 group-hover:from-red-500 group-hover:to-red-700">
+                            Ver Detalles <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tubería -->
+                <div class="product-card rounded-3xl p-8 shadow-xl hover-lift group cursor-pointer" onclick="showProductDetails('tuberia')">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-road text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy-800 mb-4">Tubería y Canalización</h3>
+                        <p class="text-gray-600 mb-6">Tubos PVC, EMT, canalizaciones y accesorios completos.</p>
+                        
+                        <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Tubos PVC ½", ¾", 1", 2"</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Tubo EMT galvanizado</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Canaletas y ductos</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Conectores y uniones</li>
+                        </ul>
+                        
+                        <div class="bg-gradient-to-r from-blue-400 to-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 group-hover:from-blue-500 group-hover:to-blue-700">
+                            Ver Detalles <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Iluminación -->
+                <div class="product-card rounded-3xl p-8 shadow-xl hover-lift group cursor-pointer" onclick="showProductDetails('iluminacion')">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-golden-400 to-golden-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-lightbulb text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy-800 mb-4">Sistemas de Iluminación</h3>
+                        <p class="text-gray-600 mb-6">LED, reflectores, paneles y iluminación inteligente.</p>
+                        
+                        <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Luminarias LED residenciales</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Reflectores alta potencia</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Paneles LED 60x60</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Sistemas solares LED</li>
+                        </ul>
+                        
+                        <div class="bg-gradient-to-r from-golden-400 to-golden-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 group-hover:from-golden-500 group-hover:to-golden-700">
+                            Ver Detalles <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Control -->
+                <div class="product-card rounded-3xl p-8 shadow-xl hover-lift group cursor-pointer" onclick="showProductDetails('control')">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-microchip text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-navy-800 mb-4">Material de Control</h3>
+                        <p class="text-gray-600 mb-6">Breakers, contactores, relés y automatización industrial.</p>
+                        
+                        <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Breakers mono y trifásicos</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Contactores AC y DC</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Relés temporizadores</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Sistemas automatización</li>
+                        </ul>
+                        
+                        <div class="bg-gradient-to-r from-purple-400 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 group-hover:from-purple-500 group-hover:to-purple-700">
+                            Ver Detalles <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-12 bg-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Content -->
+                <div class="text-white">
+                    <div class="inline-block bg-golden-400 text-navy-800 px-6 py-2 rounded-full text-sm font-semibold mb-6">
+                        ¿Por qué elegirnos?
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        La experiencia y calidad que tu proyecto necesita
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        En Barquisimeto, somos sinónimo de confiabilidad, calidad y servicio excepcional 
+                        en el sector eléctrico desde hace más de 25 años.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-medal text-navy-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Calidad Garantizada</h3>
+                                <p class="text-gray-300">Trabajamos solo con las mejores marcas del mercado. Cada producto tiene garantía y respaldo técnico.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shipping-fast text-navy-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Entrega Inmediata</h3>
+                                <p class="text-gray-300">Stock permanente y servicio de entrega en Barquisimeto y municipios aledaños el mismo día.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-tie text-navy-800 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Asesoría Especializada</h3>
+                                <p class="text-gray-300">Nuestro equipo técnico te guía para elegir los materiales correctos según tu proyecto específico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual --> 
+                <div class="relative">    
+                    <div class="w-full bg-gradient-to-br from-golden-100 to-golden-200 rounded-3xl shadow-2xl flex items-center justify-center relative overflow-hidden">
+                        <img src="https://media.istockphoto.com/id/1428071835/es/foto/hombre-un-t%C3%A9cnico-el%C3%A9ctrico-que-trabaja-en-una-centralita-con-fusibles.jpg?s=612x612&w=0&k=20&c=5y9tHbrGsKGmdkJMcEBzqzf3CJoEfzpcf2Pp9UBa-VU=" alt="electricista">
+                        
+                        <!-- Floating stats -->
+                        <div class="absolute top-6 right-6 bg-white rounded-2xl p-4 shadow-xl">
+                            <div class="text-2xl font-bold text-navy-800">98%</div>
+                            <div class="text-sm text-gray-600">Satisfacción</div>
+                        </div>
+                        
+                        <div class="absolute bottom-6 left-6 bg-navy-700 text-white rounded-2xl p-4 shadow-xl">
+                            <div class="text-2xl font-bold text-golden-400">24/7</div>
+                            <div class="text-sm">Soporte</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-12 bg-gradient-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-navy-100 text-navy-700 px-6 py-2 rounded-full text-sm font-semibold mb-4">
+                    Nuestros Servicios
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+                    Soluciones completas para <span class="text-gradient">todos tus proyectos</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    No solo vendemos productos, te acompañamos en todo el proceso con servicios especializados
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-calculator text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4">Cotizaciones Personalizadas</h3>
+                    <p class="text-gray-600">Presupuestos detallados según las necesidades específicas de tu proyecto, con precios competitivos del mercado.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-truck text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4">Entrega a Domicilio</h3>
+                    <p class="text-gray-600">Servicio de entrega en Barquisimeto y municipios aledaños con tarifas preferenciales y entregas el mismo día.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4">Instalación Técnica</h3>
+                    <p class="text-gray-600">Equipo de técnicos certificados para instalaciones residenciales, comerciales e industriales con garantía completa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-navy-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-golden-100 text-golden-700 px-6 py-2 rounded-full text-sm font-semibold mb-4">
+                    Testimonios
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
+                    Lo que dicen nuestros <span class="text-gradient">clientes</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-golden-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Excelente atención y productos de calidad. Siempre encuentro lo que necesito para mis proyectos eléctricos."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-800">Carlos Martínez</h4>
+                            <p class="text-sm text-gray-500">Electricista Profesional</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-golden-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"La asesoría técnica es excepcional. Me ayudaron a elegir los mejores materiales para mi casa."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-800">María González</h4>
+                            <p class="text-sm text-gray-500">Arquitecta</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-golden-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Precios justos, entrega rápida y productos originales. Los recomiendo totalmente."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-800">Luis Rodríguez</h4>
+                            <p class="text-sm text-gray-500">Contratista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-8 bg-gradient-hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div class="text-white">
+                    <div class="inline-block bg-golden-400 text-navy-800 px-6 py-2 rounded-full text-sm font-semibold mb-6">
+                        Contáctanos
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        ¿Tienes un proyecto en mente?
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Estamos aquí para ayudarte. Visítanos o contáctanos para una asesoría personalizada.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-navy-800"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Nuestra Ubicación</h3>
+                                <p class="text-gray-300">Calle 37 entre 27 y 28, Barquisimeto, Edo. Lara</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-phone text-navy-800"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Teléfono</h3>
+                                <p class="text-gray-300">+58 424-5320538</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-golden-400 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-clock text-navy-800"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Horarios</h3>
+                                <p class="text-gray-300">Lun - Vie: 8AM - 4PM<br>Sáb: 8AM - 12PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-3xl p-8 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-navy-800 mb-6">Envíanos un mensaje</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-golden-400 focus:border-transparent">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-golden-400 focus:border-transparent">
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-golden-400 focus:border-transparent">
+                        <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-golden-400 focus:border-transparent">
+                            <option value="">Selecciona un tema</option>
+                            <option value="cotizacion">Solicitar cotización</option>
+                            <option value="productos">Consulta sobre productos</option>
+                            <option value="servicio">Servicio técnico</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-golden-400 focus:border-transparent"></textarea>
+                        <button type="submit" class="w-full bg-gradient-to-r from-golden-400 to-golden-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-glow transition-all duration-300">
+                            Enviar Mensaje <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="logo-placeholder scale-75">
+                           
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient">Eléctricos Ruitoca</h3>
+                            <p class="text-gray-400">Tu tienda de confianza</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Más de 25 años siendo la referencia en materiales eléctricos en Barquisimeto y todo el estado Lara.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-golden-400 rounded-full flex items-center justify-center text-navy-800 hover:bg-golden-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-golden-400 rounded-full flex items-center justify-center text-navy-800 hover:bg-golden-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-golden-400 rounded-full flex items-center justify-center text-navy-800 hover:bg-golden-500 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-golden-400">Productos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#productos" class="hover:text-golden-400 transition-colors">Cables y Conductores</a></li>
+                        <li><a href="#productos" class="hover:text-golden-400 transition-colors">Tubería PVC</a></li>
+                        <li><a href="#productos" class="hover:text-golden-400 transition-colors">Iluminación LED</a></li>
+                        <li><a href="#productos" class="hover:text-golden-400 transition-colors">Material de Control</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-golden-400">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i>+58 424-5320538</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i>electricosruitoca@gmail.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Calle 37 entre 27 y 28, Barquisimeto</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-navy-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Eléctricos Ruitoca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-14 h-14 bg-golden-400 text-navy-800 rounded-full shadow-lg hover:bg-golden-500 hover:shadow-xl transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Link to External JavaScript -->
+    <script src="pedido.js"></script>
+</body>
+</html>
